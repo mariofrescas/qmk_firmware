@@ -2,20 +2,12 @@
 
 ## Compile options
 
-### Compile
+### Compile and flash
 
 ```
-sudo make crkbd/rev1/common:tiling-vim
+sudo make crkbd/rev1/legacy:tiling-vim:dfu-split-left
 ```
 
-### Compila and flash for Elite-C
-
 ```
-sudo make crkbd/rev1/common:tiling-vim:dfu
-```
-
-### Compila and flash for Pro-Micro
-
-```
-sudo make crkbd/rev1/common:tiling-vim:avrdude
+sudo make crkbd/rev1/legacy:tiling-vim:dfu-split-right RGB_MATRIX_SPLIT_RIGHT=yes
 ```
