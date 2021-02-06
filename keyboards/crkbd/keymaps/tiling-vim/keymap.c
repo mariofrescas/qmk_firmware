@@ -81,7 +81,7 @@ void rgb_matrix_indicators_user(void) {
 
     case 2:
       for (int i = 0; i < DRIVER_LED_TOTAL; i++) {
-        rgb_matrix_set_color(i, 0, 0, 255);
+        rgb_matrix_set_color(i, 255, 0, 0);
       }
     break;
 
