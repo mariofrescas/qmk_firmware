@@ -295,7 +295,6 @@ void render_status_secondary(void) {
 
 void oled_task_user(void) {
     if (timer_elapsed32(oled_timer) > 1500000) {
-        oled_off();
         return;
     }
 #ifndef SPLIT_KEYBOARD
