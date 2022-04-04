@@ -97,18 +97,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef RGB_MATRIX_ENABLE
 void rgb_matrix_indicators_user(void) {
   switch (biton32(layer_state)) {
-    case 1:
-      for (int i = 0; i < DRIVER_LED_TOTAL; i++) {
-        rgb_matrix_set_color(i, 0, 255, 0);
-      }
-    break;
-
-    case 2:
-      for (int i = 0; i < DRIVER_LED_TOTAL; i++) {
-        rgb_matrix_set_color(i, 255, 0, 0);
-      }
-    break;
-
     case 3:
     case 4:
       for (int i = 0; i < DRIVER_LED_TOTAL; i++) {
